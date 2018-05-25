@@ -6,11 +6,12 @@ attr_accessor :tile_array
 
   def initialize()
     @tile_array = []
+    populate_board()
   end
 
   def populate_board()
     counter = 1
-    while counter <= 100
+    while counter <= 200
       @tile_array << Tile.new(counter, 0)
       counter += 1
     end
@@ -36,7 +37,6 @@ attr_accessor :tile_array
         end
       end
     end
-
   end
 
 
